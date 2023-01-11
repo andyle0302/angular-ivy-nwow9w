@@ -1,0 +1,9 @@
+
+<p>Marco.dev, highlighter example</p>
+<input type="text" [(ngModel)]="filterText" />
+<br />
+<p
+  [innerHtml]="
+    textToShowAsResult | highlighter: filterText:getHighlighterClass()
+  "
+></p>
